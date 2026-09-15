@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="观看梦境回声 LUCIDREAM 的完整产品演示，从记录梦境到制作梦卡与准备分享">
+    <title>梦境回声 · 产品演示 | LUCIDREAM</title>
+    <style>
+      :root { color-scheme: light; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", sans-serif; color: #343a4d; background: #f7f8fc; }
+      * { box-sizing: border-box; }
+      body { margin: 0; background: radial-gradient(ellipse at top right, #dee7fb 0, transparent 56%); min-height: 100vh; }
+      main { max-width: 1120px; margin: auto; padding: 40px 24px 32px; }
+      header { display: flex; justify-content: space-between; align-items: center; gap: 20px; margin-bottom: 42px; }
+      .brand { font-family: Georgia, serif; letter-spacing: .2em; font-size: 18px; }
+      a { color: #315a96; text-underline-offset: 4px; }
+      a:focus-visible, video:focus-visible { outline: 3px solid #5683c4; outline-offset: 5px; }
+      .eyebrow { color: #73809b; letter-spacing: .16em; font-size: 13px; }
+      h1 { font-size: clamp(30px, 5vw, 48px); font-weight: 500; letter-spacing: .03em; margin: 14px 0; }
+      .intro { line-height: 1.8; color: #68738a; margin: 0 0 24px; }
+      .player { background: #111827; border-radius: 18px; overflow: hidden; box-shadow: 0 16px 50px #35486e18; }
+      video { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: contain; }
+      .details { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 14px; margin-top: 18px; font-size: 14px; color: #68738a; }
+      nav { display: flex; flex-wrap: wrap; gap: 14px 24px; }
+      footer { margin-top: 32px; font-size: 13px; line-height: 1.8; color: #73809b; }
+      #playback-error { padding: 16px; margin: 0; background: #eef2fa; }
+      @media (max-width: 560px) { main { padding: 24px 16px; } header { margin-bottom: 32px; } .brand { font-size: 15px; } header a { font-size: 13px; } .player { border-radius: 10px; } }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <span class="brand">LUCIDREAM</span>
+        <a href="https://github.com/zhl-1-2/lucidream#readme">查看项目</a>
+      </header>
+      <p class="eyebrow">梦境回声 · 小七</p>
+      <h1>将梦境，留作一张卡</h1>
+      <p class="intro">从一场云海洗衣店的梦开始，看看如何记录、解读，再生成自己的梦卡</p>
+      <div class="player">
+        <video id="demo" controls playsinline preload="metadata" poster="poster.png" aria-label="梦境回声产品演示，带步骤字幕，无旁白">
+          <source src="lucidream-demo-1080p.mp4" type="video/mp4">
+          你的浏览器不支持此视频，请使用下方的下载入口
+        </video>
+      </div>
+      <p id="playback-error" hidden>视频暂时无法加载，请刷新重试，或使用下方的下载入口</p>
+      <div class="details">
+        <span>2 分 49 秒 · 1080p · 步骤字幕 · 无旁白</span>
+        <nav aria-label="相关入口">
+          <a href="https://seoshulk2a6fn66jib6rs.apigateway-cn-beijing.volceapi.com/">在线体验产品</a>
+          <a href="https://github.com/zhl-1-2/lucidream/releases/download/demo-video-2026-09-15/lucidream-demo-1080p.mp4">下载视频</a>
+        </nav>
+      </div>
+      <footer>视频为真实模型生成与实际操作录制，部分等待已加速并标注<br>分享环节展示文案准备，最终需由用户自行到知乎发布</footer>
+    </main>
+    <script>
+      const video = document.getElementById("demo");
+      const showError = () => { document.getElementById("playback-error").hidden = false; };
+      video.addEventListener("error", showError);
+      video.querySelector("source").addEventListener("error", showError);
+    </script>
+  </body>
+</html>

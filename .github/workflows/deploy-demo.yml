@@ -1,0 +1,48 @@
+name: Publish video preview
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - docs/video/**
+      - docs/images/demo-cover.png
+      - .github/workflows/deploy-demo.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: video-pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Prepare public video page
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p _video-site
+          cp docs/video/index.html _video-site/index.html
+          cp docs/images/demo-cover.png _video-site/poster.png
+          gh release download demo-video-2026-09-15 --repo "$GITHUB_REPOSITORY" --pattern lucidream-demo-1080p.mp4 --dir _video-site
+          test -s _video-site/lucidream-demo-1080p.mp4
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _video-site
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy video preview
+        id: deployment
+        uses: actions/deploy-pages@v4

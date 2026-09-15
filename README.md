@@ -8,7 +8,7 @@
 
 由 [小七](https://github.com/zhl-1-2) 制作 · 知乎黑客松参赛作品
 
-[在线体验](https://seoshulk2a6fn66jib6rs.apigateway-cn-beijing.volceapi.com/) · [观看演示](https://github.com/zhl-1-2/lucidream/releases/tag/demo-video-2026-09-15) · [本地运行](#本地运行) · [架构说明](docs/ARCHITECTURE.md)
+[在线体验](https://seoshulk2a6fn66jib6rs.apigateway-cn-beijing.volceapi.com/) · [在线观看演示](https://zhl-1-2.github.io/lucidream/) · [本地运行](#本地运行) · [架构说明](docs/ARCHITECTURE.md)
 
 [![核心检查](https://github.com/zhl-1-2/lucidream/actions/workflows/ci.yml/badge.svg)](https://github.com/zhl-1-2/lucidream/actions/workflows/ci.yml)
 
@@ -16,11 +16,13 @@
 
 记录醒来时还记得的片段，由你确认每一处梦象，再阅读 AI 解读，生成属于这场梦的画面。梦卡可以下载留存，也可以配上自己的故事，带到知乎分享
 
-[![LUCIDREAM 梦卡制作界面，点击查看演示视频](docs/images/demo-cover.png)](https://github.com/zhl-1-2/lucidream/releases/tag/demo-video-2026-09-15)
+[![LUCIDREAM 梦卡制作界面，点击在线播放演示视频](docs/images/demo-cover.png)](https://zhl-1-2.github.io/lucidream/)
 
 ## 先看一场梦如何变成卡片
 
-**[观看完整演示 · 2 分 49 秒](https://github.com/zhl-1-2/lucidream/releases/tag/demo-video-2026-09-15)** · [下载 1080p 视频](https://github.com/zhl-1-2/lucidream/releases/download/demo-video-2026-09-15/lucidream-demo-1080p.mp4)
+**[在线播放完整演示 · 2 分 49 秒](https://zhl-1-2.github.io/lucidream/)** · [下载 1080p 视频](https://github.com/zhl-1-2/lucidream/releases/download/demo-video-2026-09-15/lucidream-demo-1080p.mp4)
+
+打开播放页即可观看，支持暂停、拖动进度与全屏，无需先下载文件
 
 视频从云海洗衣店的一场梦开始，实际走过梦象确认、文字解读和画面生成，随后调整边框、下载梦卡并准备分享文案。使用真实模型生成，部分等待过程已加速并标注；视频含步骤字幕，无旁白
 
@@ -158,10 +160,12 @@ GitHub Actions 自动执行上述核心检查，不使用真实密钥，不发�
 
 当前演示部署在火山引擎，前端静态资源与 FastAPI 对外提供服务，OAuth 服务只监听内部回环地址。实际演示编排见 [deployment/DEMO.md](deployment/DEMO.md)。
 
-- 此次 GitHub 发布仅归档源码与文档，不会触发线上部署
+- 提交源码不会触发火山引擎产品服务的部署；视频预览页单独通过 GitHub Pages 发布
 - 临时存储不提供跨重启历史、额度或会话的持久保障
 - 长期开放前仍需补齐持久化、备份恢复、内容审核、监控与权利审校
 - `docs/`、验收记录和部署文档包含阶段历史；当前产品能力以本 README 为入口，历史待办不代表当前线上状态
+
+视频播放页源码在 `docs/video/index.html`，发布流程见 [视频预览工作流](.github/workflows/deploy-demo.yml)。该流程仅发布播放页、封面和指定 Release 的视频，不会发布后端、环境配置或用户数据
 
 ## 素材与许可
 
