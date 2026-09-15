@@ -1,0 +1,8 @@
+fastapi==0.116.1
+httpx==0.28.1
+pydantic-settings==2.10.1
+pytest==8.4.2
+uvicorn[standard]==0.35.0
+alibabacloud_green20220302==3.2.4
+rapidocr-onnxruntime==1.4.4
+Pillow==12.3.0

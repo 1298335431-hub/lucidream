@@ -1,0 +1,76 @@
+{
+  "schema_version": "0.1",
+  "card_id": "DREAM-001",
+  "card_title": "被追赶",
+  "audit_status": "ai_checked_pending_human",
+  "audited_at": "2026-09-07",
+  "records": [
+    {
+      "evidence_id": "EVID-CHASE-001",
+      "evidence_type": "open_research",
+      "title": "Dreaming of being chased reflects waking-life experiences related to negative relationships with others metaphorically",
+      "author_or_org": "Jiaxi Wang; Xiaoling Feng",
+      "edition_or_date": "Frontiers in Psychology, 2024-07-26, Volume 15, Article 1413011",
+      "locator": "Abstract; Methods 2.1–2.3; Results; Discussion 4.1 Limitations",
+      "source_url": "https://doi.org/10.3389/fpsyg.2024.1413011",
+      "source_file_sha256": null,
+      "permitted_use": "允许在保留作者、原始出版信息、许可证链接并说明改写的条件下分享与改编，包含商业用途。梦卡仅使用自行撰写的中文概括，不复制论文段落。",
+      "rights_evidence": {
+        "copyright": "© 2024 Wang and Feng",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "article_license_locator": "Article copyright statement"
+      },
+      "claim_supported": "在160名中国大学生的一日记录样本中，清醒时记录到负面人际经历与当晚报告被追赶梦呈相关。该研究可以支持把近期人际经历作为一种可供用户对照的可能方向。",
+      "claims_not_supported": [
+        "所有被追赶梦都源于人际冲突",
+        "追赶者固定象征现实中的某个人",
+        "研究已经证明清醒经历导致被追赶梦"
+      ],
+      "study_limits": [
+        "样本为中国大学生，女性占137人",
+        "只记录一个清醒日和随后一晚",
+        "研究发现相关性，没有证明因果",
+        "研究没有询问参与者是否认同两类经历存在隐喻对应"
+      ],
+      "quote_used": false,
+      "rights_status": "cc_by_4_0_ai_checked",
+      "verified_by": "Codex AI辅助核验",
+      "verified_at": "2026-09-07",
+      "verification_status": "pending_human_review"
+    },
+    {
+      "evidence_id": "EVID-CHASE-002",
+      "evidence_type": "openly_readable_research",
+      "title": "Nightmare Themes: An Online Study of Most Recent Nightmares and Childhood Nightmares",
+      "author_or_org": "Michael Schredl; Anja S. Göritz",
+      "edition_or_date": "Journal of Clinical Sleep Medicine, 2018-03-15, 14(3):465–471",
+      "locator": "Abstract; Methods; Results, Nightmare Topics; Table 2; Table 4",
+      "source_url": "https://doi.org/10.5664/jcsm.7002",
+      "source_file_sha256": null,
+      "permitted_use": "可以引用题录并自行概括研究事实。未确认到允许商业改编或全文再分发的 Creative Commons 许可，因此不得复制正文、表格或图片，也不得把全文加入生产 RAG。",
+      "rights_evidence": {
+        "copyright": "© 2018 American Academy of Sleep Medicine",
+        "license": "no_open_reuse_license_confirmed",
+        "pmc_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5837849/",
+        "crossref_license_note": "Crossref 仅列出文本与数据挖掘条款，不能据此认定开放改编许可"
+      },
+      "claim_supported": "研究收集1216份最近一次梦魇报告，被追赶属于较常见主题。被识别出的追赶者包括人、动物和虚构生物或事物。该结果只支持主题及追赶者类型的多样性。",
+      "claims_not_supported": [
+        "被追赶主题能够说明个人的心理原因",
+        "被人、动物或虚构事物追赶分别具有固定含义",
+        "梦魇主题频率能够用于个体诊断"
+      ],
+      "study_limits": [
+        "在线样本包含主动注册参与研究的人",
+        "主题分类的一致性为中等水平",
+        "研究分析梦魇内容分类，没有检验个体象征解释"
+      ],
+      "quote_used": false,
+      "rights_status": "cite_only_ai_checked",
+      "verified_by": "Codex AI辅助核验",
+      "verified_at": "2026-09-07",
+      "verification_status": "pending_human_review"
+    }
+  ]
+}

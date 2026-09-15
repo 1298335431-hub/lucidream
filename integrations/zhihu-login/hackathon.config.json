@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "projectName": "LUCIDREAM Zhihu Login",
+  "projectSlug": "lucidream-zhihu-login",
+  "oauth": {
+    "enabled": true,
+    "appId": "760",
+    "redirectUri": "https://seoshulk2a6fn66jib6rs.apigateway-cn-beijing.volceapi.com/auth/callback",
+    "identityPath": ["uid"],
+    "callbackRegistered": true,
+    "credentialService": "zhihu-hackathon:lucidream-zhihu-login:b854735cf5",
+    "credentialAccount": "oauth-app-key"
+  },
+  "host": "127.0.0.1",
+  "port": 4173
+}

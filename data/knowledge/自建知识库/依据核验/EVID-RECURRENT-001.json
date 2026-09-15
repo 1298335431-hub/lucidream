@@ -1,0 +1,45 @@
+{
+  "schema_version": "0.1",
+  "evidence_id": "EVID-RECURRENT-001",
+  "audit_status": "ai_checked_pending_human",
+  "audited_at": "2026-09-07",
+  "evidence_type": "author_manuscript_research",
+  "title": "The content of recurrent dreams in young adolescents",
+  "author_or_org": "Aline Gauchat; Jean R. Séguin; Esther McSween-Cadieux; Antonio Zadra",
+  "edition_or_date": "Consciousness and Cognition, 2015-12, 37:103–111",
+  "locator": "Abstract; Methods 2.1–2.2; Results; Table 2; Discussion; PMC manuscript notice",
+  "source_url": "https://doi.org/10.1016/j.concog.2015.08.009",
+  "source_file_sha256": null,
+  "permitted_use": "只保留题录、链接和独立撰写的事实概括。PMC 提供的是作者手稿，页面没有给出允许商业改编或全文再分发的 Creative Commons 许可证，因此不复制、翻译、改写、嵌入或向量化正文、梦例、表格与图像。",
+  "rights_evidence": {
+    "publisher": "Elsevier B.V.",
+    "license": "no_open_reuse_license_confirmed",
+    "pmc_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4851546/",
+    "pmc_status": "Author manuscript made available in PMC; no article-specific Creative Commons license displayed",
+    "crossref_license_note": "Crossref lists text-and-data-mining terms, not an open version-of-record reuse license"
+  },
+  "claim_supported": "研究收集102份11至15岁青少年的重复梦报告，并按内容主题编码。报告中出现坠落、被追赶、陌生人接触、陌生人进入住宅、迟到或迷路、被困等类别。该研究只支持把这些元素作为叙事分类线索。",
+  "claims_not_supported": [
+    "青少年重复梦主题能够解释普通成年人的单次梦境",
+    "房子、陌生人、门或被困具有固定象征",
+    "重复梦主题可以诊断心理状态或证明现实问题尚未解决"
+  ],
+  "study_limits": [
+    "样本仅包含11至15岁青少年，并且研究对象是重复梦",
+    "最终分析102份梦报告，其中男生报告数量较少",
+    "部分报告细节不足，样本量也限制年龄与性别比较",
+    "研究主题编码不能外推为个体象征解释",
+    "未确认开放复用许可证"
+  ],
+  "applies_to_cards": [
+    "DREAM-002",
+    "DREAM-012",
+    "DREAM-024",
+    "DREAM-033"
+  ],
+  "quote_used": false,
+  "rights_status": "cite_only_ai_checked",
+  "verified_by": "Codex AI辅助核验",
+  "verified_at": "2026-09-07",
+  "verification_status": "pending_human_review"
+}

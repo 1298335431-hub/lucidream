@@ -1,0 +1,35 @@
+{
+  "schema_version": "0.1",
+  "evidence_id": "EVID-SAFETY-001",
+  "audit_status": "ai_checked_pending_human_product_review",
+  "audited_at": "2026-09-07",
+  "evidence_type": "internal_product_policy",
+  "title": "梦卡现实安全分流边界",
+  "author_or_org": "梦卡项目组（AI辅助整理）",
+  "edition_or_date": "内部规则，2026-09-07核验",
+  "locator": "知识卡安全提示与生成流程安全分流规则",
+  "source_url": null,
+  "source_file_sha256": null,
+  "permitted_use": "梦卡项目内部原创规则，可用于产品提示词、知识卡和安全分流。仍需产品负责人或具备相应资质的审核人确认具体触发条件与用户文案。",
+  "rights_evidence": {
+    "copyright": "梦卡项目内部原创",
+    "license": "internal_original",
+    "external_research_source": false
+  },
+  "claim_supported": "梦境画面本身不能被当作现实疾病、关系事实、犯罪、自伤伤人或即时危险的证据。只有用户明确描述现实中的危险、身体症状或持续困扰时，产品才转入相应的现实支持流程。",
+  "claims_not_supported": [
+    "把内部产品规则包装成科研结论",
+    "用梦境内容判断用户现实中已经处于危险",
+    "用统一提示替代具体地区的紧急支持信息或专业意见"
+  ],
+  "study_limits": [
+    "本条是产品安全规则，不是外部研究证据",
+    "当前仅完成AI辅助整理，尚未完成人工产品与安全审核"
+  ],
+  "applies_to_cards": ["DREAM-039", "DREAM-040", "DREAM-041", "DREAM-042", "DREAM-045", "DREAM-046", "DREAM-049"],
+  "quote_used": false,
+  "rights_status": "internal_original_pending_review",
+  "verified_by": "Codex AI辅助核验",
+  "verified_at": "2026-09-07",
+  "verification_status": "pending_human_product_review"
+}

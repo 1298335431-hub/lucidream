@@ -1,0 +1,69 @@
+.liquid-login-frame {
+  width: 82px;
+  height: 38px;
+  padding: 1px;
+  border-radius: 14px;
+  background: linear-gradient(180deg, rgba(188, 183, 226, .56), rgba(229, 227, 245, .3) 48%, rgba(172, 169, 218, .48));
+  box-shadow: 0 8px 22px rgba(88, 85, 145, .13);
+  opacity: 0;
+  will-change: transform, opacity;
+}
+
+.liquid-login-button {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  overflow: hidden;
+  padding: 0 7px;
+  border: 0;
+  border-radius: 13px;
+  background: #e8eaf5;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .62), 0 4px 12px rgba(73, 72, 116, .1);
+  color: #303348;
+  transition: transform .24s ease, box-shadow .24s ease;
+}
+
+.liquid-login-button canvas {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.liquid-login-button span,
+.liquid-login-button svg {
+  position: relative;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.liquid-login-button span {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: .08em;
+  text-indent: .08em;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, .62);
+}
+
+.liquid-login-button svg { opacity: .68; }
+.liquid-login-button:hover { transform: translateY(-1px); box-shadow: inset 0 0 0 1px rgba(255,255,255,.72), 0 8px 18px rgba(88,85,145,.18); }
+.liquid-login-button:active { transform: translateY(1px) scale(.985); }
+.liquid-login-button:focus-visible { outline: 1px solid #898db4; outline-offset: 4px; }
+.liquid-login-button.is-static { background: linear-gradient(180deg, #f5f5fb 0%, #e6e8f3 48%, #c9d0ec 100%); }
+
+@media (max-width: 640px) {
+  .liquid-login-frame { width: 80px; height: 36px; }
+  .liquid-login-button { padding: 0 6px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .liquid-login-frame { opacity: 1; will-change: auto; }
+  .liquid-login-button { transition: none; }
+}

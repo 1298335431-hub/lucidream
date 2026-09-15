@@ -1,0 +1,43 @@
+{
+  "schema_version": "0.1",
+  "evidence_id": "EVID-THEME-001",
+  "audit_status": "ai_checked_pending_human",
+  "audited_at": "2026-09-07",
+  "evidence_type": "bibliographic_abstract_only",
+  "title": "Typical Dreams: Stability and Gender Differences",
+  "author_or_org": "Michael Schredl; Petra Ciric; Simon Götz; Lutz Wittmann",
+  "edition_or_date": "The Journal of Psychology, 2004-11, 138(6):485–494",
+  "locator": "PubMed bibliographic record and abstract",
+  "source_url": "https://doi.org/10.3200/JRLP.138.6.485-494",
+  "source_file_sha256": null,
+  "permitted_use": "只保留题录、链接和根据公开摘要独立撰写的事实概括。没有确认到允许商业改编或全文再分发的开放许可证，不复制、翻译、改写、嵌入或向量化论文正文、问卷、表格与图像。",
+  "rights_evidence": {
+    "publisher": "Informa UK Limited",
+    "license": "no_open_reuse_license_confirmed",
+    "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/15612605/",
+    "crossref_license_note": "Crossref metadata does not list an open reuse license"
+  },
+  "claim_supported": "一项对444名参与者使用典型梦问卷的研究把被追赶、坠落、飞行、考试失败和找不到卫生间等列为可识别的典型梦主题。作者同时明确指出，这些主题的意义以及它们与清醒生活经历的关系仍未得到回答。该研究只适合支持主题分类。",
+  "claims_not_supported": [
+    "典型梦主题具有统一的心理含义",
+    "坠落、飞行、考试或迟到可以说明个人能力、焦虑或未来结果",
+    "主题出现频率能够用于个体诊断"
+  ],
+  "study_limits": [
+    "研究使用回顾性自报的典型梦问卷",
+    "摘要没有提供可用于个体解释的因果证据",
+    "当前只核验到正式题录和公开摘要",
+    "未确认开放复用许可证"
+  ],
+  "applies_to_cards": [
+    "DREAM-002",
+    "DREAM-003",
+    "DREAM-005",
+    "DREAM-011"
+  ],
+  "quote_used": false,
+  "rights_status": "cite_only_ai_checked",
+  "verified_by": "Codex AI辅助核验",
+  "verified_at": "2026-09-07",
+  "verification_status": "pending_human_review"
+}

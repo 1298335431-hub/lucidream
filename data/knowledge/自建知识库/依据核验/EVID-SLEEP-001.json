@@ -1,0 +1,40 @@
+{
+  "schema_version": "0.1",
+  "evidence_id": "EVID-SLEEP-001",
+  "audit_status": "ai_checked_pending_human",
+  "audited_at": "2026-09-07",
+  "evidence_type": "open_research",
+  "title": "A clinician's guide to recurrent isolated sleep paralysis",
+  "author_or_org": "Brian A. Sharpless",
+  "edition_or_date": "Neuropsychiatric Disease and Treatment, 2016-07-19, 12:1761–1767",
+  "locator": "Abstract; Introduction; Establish the presence of isolated SP episodes; Establish the presence of RISP; Conclusion",
+  "source_url": "https://doi.org/10.2147/NDT.S100307",
+  "source_file_sha256": null,
+  "permitted_use": "文章采用 CC BY-NC 3.0。商业产品中只保留题录、链接和独立撰写的临床边界概括，不复制、翻译、改写、嵌入或向量化正文、量表、表格与图像。商业复用原材料需要另行取得许可。",
+  "rights_evidence": {
+    "copyright": "© 2016 Sharpless; published and licensed by Dove Medical Press Limited",
+    "license": "CC BY-NC 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-nc/3.0/",
+    "article_license_locator": "Publisher PDF first-page license statement and Crossref license metadata"
+  },
+  "claim_supported": "睡眠瘫痪的核心区分点是入睡或醒来交界时保留清醒意识而暂时不能活动，可能伴随鲜明的感知体验。单次片段本身不足以诊断复发性孤立性睡眠瘫痪，评估还要考虑反复发生、明显困扰以及其他睡眠障碍、药物或物质等鉴别因素。",
+  "claims_not_supported": [
+    "只凭梦里不能动或不能说话诊断睡眠瘫痪",
+    "把睡眠瘫痪解释为超自然压迫、创伤或精神疾病",
+    "由一次体验给出治疗方案或临床诊断"
+  ],
+  "study_limits": [
+    "这是面向临床人员的叙述性综述，不是针对梦卡用户的诊断工具",
+    "作者明确指出治疗证据仍需要更大且控制良好的试验",
+    "文章采用非商业许可，不能直接作为商业产品的可改编语料"
+  ],
+  "applies_to_cards": [
+    "DREAM-006",
+    "DREAM-007"
+  ],
+  "quote_used": false,
+  "rights_status": "cite_only_ai_checked",
+  "verified_by": "Codex AI辅助核验",
+  "verified_at": "2026-09-07",
+  "verification_status": "pending_human_review"
+}

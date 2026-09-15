@@ -1,0 +1,78 @@
+.tubelight-nav {
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px;
+  border: 1px solid rgba(17, 17, 17, .08);
+  border-radius: 999px;
+  background: #fafbfe;
+  box-shadow: 0 8px 28px rgba(28, 38, 55, .08), inset 0 1px 0 rgba(255, 255, 255, .9);
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+
+.tubelight-nav button {
+  position: relative;
+  z-index: 1;
+  min-width: 92px;
+  height: 36px;
+  padding: 0 17px;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: #8b888e;
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 0;
+  transition: color .25s ease;
+}
+
+.tubelight-nav button:hover,
+.tubelight-nav button:focus-visible,
+.tubelight-nav button.is-active {
+  color: #263b59;
+}
+
+.tubelight-nav button:focus-visible { outline: 1px solid rgba(100, 140, 196, .65); outline-offset: 2px; }
+.tubelight-nav-label { position: relative; z-index: 2; }
+.tubelight-nav-icon { position: relative; z-index: 2; display: none; margin: auto; }
+
+.tubelight-active {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  border-radius: 999px;
+  background: rgba(211, 226, 248, .52);
+  box-shadow: inset 0 0 0 1px rgba(136, 171, 219, .14);
+  pointer-events: none;
+}
+
+.tubelight-line {
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  width: 32px;
+  height: 3px;
+  border-radius: 3px 3px 0 0;
+  background: #7ea4dc;
+  transform: translateX(-50%);
+  box-shadow: 0 0 5px rgba(108, 153, 214, .72);
+}
+
+.tubelight-glow { position: absolute; top: -9px; left: 50%; border-radius: 999px; background: rgba(135, 177, 231, .28); transform: translateX(-50%); filter: blur(7px); }
+.tubelight-glow-wide { width: 52px; height: 22px; }
+.tubelight-glow-mid { width: 34px; height: 18px; filter: blur(5px); }
+.tubelight-glow-core { top: -5px; width: 16px; height: 12px; filter: blur(3px); }
+
+@media (max-width: 900px) {
+  .tubelight-nav button { min-width: 78px; padding-inline: 12px; }
+}
+
+@media (max-width: 640px) {
+  .tubelight-nav { gap: 3px; padding: 3px; }
+  .tubelight-nav button { min-width: 46px; width: 46px; height: 36px; padding: 0; }
+  .tubelight-nav-label { display: none; }
+  .tubelight-nav-icon { display: block; }
+}

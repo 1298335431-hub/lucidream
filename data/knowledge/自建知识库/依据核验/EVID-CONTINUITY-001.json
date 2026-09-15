@@ -1,0 +1,37 @@
+{
+  "schema_version": "0.1",
+  "evidence_id": "EVID-CONTINUITY-001",
+  "audit_status": "ai_checked_pending_human",
+  "audited_at": "2026-09-07",
+  "evidence_type": "open_research",
+  "title": "Reactions to Dream Content: Continuity and Non-continuity",
+  "author_or_org": "David Kahn",
+  "edition_or_date": "Frontiers in Psychology, 2019-12-03, Volume 10, Article 2676",
+  "locator": "Abstract; Introduction; Methodology; Results; Discussion",
+  "source_url": "https://doi.org/10.3389/fpsyg.2019.02676",
+  "source_file_sha256": null,
+  "permitted_use": "允许在署名并引用原始出版物的条件下分享与改编，包括商业用途。梦卡使用自行撰写的中文概括，不复制论文段落、表格或图像。",
+  "rights_evidence": {
+    "copyright": "© 2019 Kahn",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "article_license_locator": "Frontiers article copyright statement"
+  },
+  "claim_supported": "论文讨论梦中情绪反应与清醒反应可能存在连续性，同时梦中的情境和行为也可能不符合清醒世界的规则。它可以支持邀请用户比较梦中感受与近期现实感受，但不能证明二者存在固定对应或因果。",
+  "claims_not_supported": [
+    "所有梦中情绪都与清醒情绪相同",
+    "某种梦境必然来自某件现实事件",
+    "情绪连续性能够提供个体诊断"
+  ],
+  "study_limits": [
+    "文章对既有研究数据进行再分析和理论讨论，证据不等于普遍定律",
+    "部分参与者同时报告相似和不同的梦中思维，结果需要保留双向可能",
+    "文章没有为具体梦象提供固定含义"
+  ],
+  "applies_to_cards": ["DREAM-022", "DREAM-030", "DREAM-052", "DREAM-053", "DREAM-055", "DREAM-057", "DREAM-059", "DREAM-061", "DREAM-069", "DREAM-072", "DREAM-075"],
+  "quote_used": false,
+  "rights_status": "cc_by_4_0_ai_checked",
+  "verified_by": "Codex AI辅助核验",
+  "verified_at": "2026-09-07",
+  "verification_status": "pending_human_review"
+}

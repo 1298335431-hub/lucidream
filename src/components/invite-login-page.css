@@ -1,0 +1,88 @@
+.invite-login-page {
+  --invite-ink: #f2efe7;
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  padding: 118px 24px 72px;
+  background:
+    radial-gradient(circle at 50% 44%, rgba(93, 96, 91, .12), transparent 38%),
+    #090a0a;
+  color: var(--invite-ink);
+  isolation: isolate;
+}
+
+.invite-dot-field { position: absolute; inset: 0; z-index: -2; width: 100%; height: 100%; opacity: .75; }
+.invite-login-page::after { content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none; background: radial-gradient(circle at 50% 48%, transparent 18%, rgba(2,3,3,.24) 72%, rgba(2,3,3,.58) 100%); }
+
+.invite-nav {
+  position: fixed;
+  z-index: 10;
+  top: 24px;
+  left: 50%;
+  width: min(720px, calc(100% - 36px));
+  height: 62px;
+  transform: translateX(-50%);
+  padding: 0 16px 0 19px;
+  border: 1px solid rgba(255,255,255,.16);
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(11,12,12,.7);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.05), 0 18px 50px rgba(0,0,0,.28);
+  backdrop-filter: blur(22px) saturate(110%);
+  -webkit-backdrop-filter: blur(22px) saturate(110%);
+  animation: invite-nav-enter .7s cubic-bezier(.22,.75,.28,1) both;
+}
+
+.invite-brand, .invite-back { border: 0; background: transparent; color: inherit; }
+.invite-brand { display: flex; align-items: center; gap: 13px; padding: 0; }
+.invite-brand .dream-card-logo { width: 29px; height: 34px; }
+.invite-brand span { font-family: 'Noto Serif SC', serif; font-size: 14px; font-weight: 400; letter-spacing: .2em; }
+.invite-back { min-height: 38px; padding: 0 15px; border: 1px solid rgba(255,255,255,.14); border-radius: 999px; display: flex; align-items: center; gap: 9px; color: rgba(242,239,231,.72); font-size: 12px; font-weight: 300; transition: color .2s ease, border-color .2s ease, background .2s ease; }
+.invite-back:hover, .invite-back:focus-visible { color: #fff; border-color: rgba(255,255,255,.34); background: rgba(255,255,255,.06); }
+
+.invite-panel { width: min(460px, 100%); text-align: center; animation: invite-panel-enter .9s .16s cubic-bezier(.22,.75,.28,1) both; }
+.invite-eyebrow { margin: 0; color: rgba(242,239,231,.36); font-size: 9px; font-weight: 300; letter-spacing: .3em; }
+.invite-panel h1 { margin: 31px 0 0; font-family: 'Noto Serif SC', serif; font-size: clamp(42px, 4.1vw, 58px); font-weight: 300; line-height: 1.16; letter-spacing: -.04em; text-wrap: balance; }
+.invite-subtitle { margin: 22px 0 0; color: rgba(242,239,231,.48); font-family: 'Noto Serif SC', serif; font-size: 14px; font-weight: 300; letter-spacing: .06em; }
+.invite-form { margin-top: 24px; }
+.invite-alternative { margin: 0 0 16px; font-size: 12px; color: rgba(242,239,231,.58); }
+.zhihu-login-entry { margin-top: 34px; }
+.zhihu-login-button { width: 100%; min-height: 56px; display: flex; align-items: center; justify-content: center; gap: 16px; border: 1px solid rgba(255,255,255,.22); border-radius: 999px; background: #eeebe3; color: #161717; font-size: 15px; cursor: pointer; }
+.zhihu-login-button[aria-disabled="true"] { background: #d6d3cd; color: #535450; cursor: default; }
+.zhihu-login-status { margin: 13px auto 0; max-width: 390px; font-size: 12px; line-height: 1.7; color: rgba(242,239,231,.64); text-wrap: pretty; }
+.zhihu-login-recheck { margin-top: 6px; padding: 6px 12px; border: 0; background: transparent; color: rgba(242,239,231,.75); font-size: 12px; text-decoration: underline; text-underline-offset: 4px; cursor: pointer; }
+.zhihu-login-button:focus-visible, .zhihu-login-recheck:focus-visible { outline: 1px solid #f2efe7; outline-offset: 4px; }
+.invite-input-shell { height: 56px; padding: 5px 6px 5px 22px; border: 1px solid rgba(255,255,255,.19); border-radius: 999px; display: grid; grid-template-columns: 1fr 44px; gap: 10px; background: rgba(255,255,255,.025); box-shadow: inset 0 1px 0 rgba(255,255,255,.045); transition: border-color .2s ease, background .2s ease, box-shadow .2s ease; }
+.invite-input-shell:focus-within { border-color: rgba(255,255,255,.42); background: rgba(255,255,255,.045); box-shadow: 0 0 0 4px rgba(255,255,255,.025); }
+.invite-input-shell input { min-width: 0; border: 0; outline: 0; background: transparent; color: #f7f4ed; font-size: 14px; font-weight: 300; letter-spacing: .08em; }
+.invite-input-shell input::placeholder { color: rgba(242,239,231,.34); }
+.invite-input-shell button { width: 44px; height: 44px; padding: 0; border: 1px solid rgba(255,255,255,.22); border-radius: 50%; display: grid; place-items: center; background: rgba(242,239,231,.93); color: #101111; transition: transform .22s ease, background .22s ease; }
+.invite-input-shell button:hover { transform: translateX(2px); background: #fff; }
+.invite-input-shell button:focus-visible, .invite-back:focus-visible, .invite-brand:focus-visible { outline: 1px solid rgba(255,255,255,.82); outline-offset: 4px; }
+.invite-helper { min-height: 20px; margin: 14px 0 0; color: rgba(242,239,231,.37); font-size: 10px; font-weight: 300; letter-spacing: .1em; }
+.invite-helper.is-success { color: rgba(207, 224, 210, .82); }
+.invite-input-shell button:disabled { cursor: wait; opacity: .72; }
+.invite-footer { position: absolute; bottom: 25px; left: 50%; margin: 0; transform: translateX(-50%); color: rgba(242,239,231,.26); font-family: 'Noto Serif SC', serif; font-size: 10px; font-weight: 300; letter-spacing: .14em; white-space: nowrap; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+
+@keyframes invite-nav-enter { from { opacity: 0; transform: translate(-50%, -12px) scale(.98); } to { opacity: 1; transform: translate(-50%, 0) scale(1); } }
+@keyframes invite-panel-enter { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
+
+@media (max-width: 620px) {
+  .invite-login-page { padding: 110px 22px 66px; }
+  .invite-nav { top: 16px; height: 56px; padding-left: 16px; }
+  .invite-brand .dream-card-logo { width: 25px; height: 30px; }
+  .invite-brand span { font-size: 12px; }
+  .invite-back { min-height: 34px; padding: 0 12px; }
+  .invite-panel h1 { font-size: clamp(39px, 12vw, 52px); }
+  .invite-form { margin-top: 24px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .invite-nav, .invite-panel { animation: none; }
+  .invite-input-shell button { transition: none; }
+}

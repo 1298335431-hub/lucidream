@@ -1,0 +1,30 @@
+.kanshan-page-guide { display: flex; align-items: center; gap: 8px; width: fit-content; max-width: 100%; margin: 18px 0; text-align: left; }
+.kanshan-page-character { width: 76px; height: 76px; flex: 0 0 76px; padding: 0; border: 0; border-radius: 16px; background: transparent; cursor: pointer; }
+.kanshan-page-character .kanshan-logo { width: 100%; height: 100%; }
+.kanshan-page-character:focus-visible { outline: 2px solid #7e899e; outline-offset: 2px; }
+.kanshan-page-character:disabled { opacity: 1; cursor: default; }
+.kanshan-page-guide .kanshan-speech { position: relative; margin: 0; padding: 10px 14px; min-width: 0; border: 1px solid #cdd3e1; border-radius: 15px 15px 15px 4px; background: #edf0f7; color: #596378; font-family: inherit; font-size: 13px; font-weight: 400; line-height: 1.8; letter-spacing: 0; text-wrap: pretty; }
+.kanshan-page-guide.is-dark .kanshan-speech { background: #252831; border-color: #454955; color: #e0e3ee; }
+.result-section > .kanshan-page-guide, .interpretation-section > .kanshan-page-guide, .interpretation-loading > .kanshan-page-guide, .invite-panel > .kanshan-page-guide, .closing-experience-copy > .kanshan-page-guide { margin: 20px auto; }
+.dreamcard-review-warning > .kanshan-page-guide { flex-direction: column; align-items: flex-start; gap: 0; margin: -12px 0 0; }
+.dreamcard-review-warning > .kanshan-page-guide .kanshan-speech { padding: 8px 10px; font-size: 12px; }
+.dreamcard-area > .kanshan-page-guide { margin: 12px 24px; }
+.dream-share-dialog > .kanshan-page-guide { margin: 12px 32px 0; }
+.parsing-copy > .kanshan-page-guide { margin: 0 auto; }
+.safety-section > .kanshan-page-guide { margin-inline: auto; }
+.interpretation-section .interpretation-content-layout { margin-top: 88px; }
+.interpretation-reading-column > .kanshan-page-guide { flex-direction: row-reverse; margin: 0 0 0 auto; }
+.interpretation-reading-column > .kanshan-page-guide .kanshan-page-character { transform: translateY(1px); }
+.interpretation-reading-column > .kanshan-page-guide .kanshan-speech { border-radius: 15px 15px 4px 15px; }
+@media(min-width: 901px) {
+  .interpretation-section .interpretation-action-rail { margin-top: -89px; }
+}
+.community-card-stage > .community-guide-speech { position: absolute; left: 114px; bottom: calc(100% + 14px); box-sizing: border-box; max-width: calc(100% - 114px); margin: 0; padding: 8px 10px; border: 1px solid #cdd3e1; border-radius: 14px 14px 14px 4px; background: #edf0f7; color: #596378; font-size: 12px; line-height: 1.8; text-wrap: pretty; }
+@media(max-width: 640px) {
+  .interpretation-section .interpretation-content-layout { margin-top: 60px; }
+  .kanshan-page-character { width: 62px; height: 62px; flex-basis: 62px; }
+  .kanshan-page-guide { gap: 4px; margin-block: 12px; }
+  .kanshan-page-guide .kanshan-speech { padding: 8px 10px; font-size: 12px; }
+  .dreamcard-review-warning > .kanshan-page-guide { flex-direction: row; align-items: center; gap: 4px; }
+  .dream-share-dialog > .kanshan-page-guide { margin-inline: 20px; }
+}

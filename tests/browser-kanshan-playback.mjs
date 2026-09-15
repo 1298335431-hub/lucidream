@@ -1,0 +1,53 @@
+import { test } from 'node:test';
+import assert from 'node:assert/strict';
+const { chromium } = await import(process.env.PLAYWRIGHT_MODULE || 'playwright');
+
+test('mascot plays on entry and refresh, rests eight seconds, and accepts clicks without stacking', async () => {
+  const browser = await chromium.launch({ headless: true });
+  try {
+    const page = await browser.newPage({ viewport: { width: 1440, height: 1000 }, reducedMotion: 'no-preference' });
+    const errors = [], requests = [];
+    page.on('pageerror', error => errors.push(error.message));
+    page.on('request', request => { if (request.url().endsWith('/computer.gif')) requests.push(request.url()); });
+    await page.route(/https:\/\/fonts\.(googleapis|gstatic)\.com\//, route => route.abort());
+    await page.route('**/api/**', route => route.fulfill({ status: 401, json: { error: { code: 'authentication_required' } } }));
+    await page.clock.install();
+    await page.goto('http://127.0.0.1:8443/', { waitUntil: 'domcontentloaded' });
+    const button = page.locator('.composer-kanshan');
+    const logo = button.locator('.kanshan-logo');
+    await button.waitFor();
+    await button.locator('img').waitFor({ timeout: 3000 });
+    await page.waitForFunction(() => document.querySelector('.composer-kanshan img')?.complete);
+    const firstUrl = await logo.getAttribute('src');
+    await page.clock.fastForward(6000);
+    await button.locator('canvas').waitFor();
+    const still = await logo.evaluate(canvas => canvas.toDataURL());
+    await page.clock.fastForward(3000);
+    assert.equal(await logo.evaluate(canvas => canvas.toDataURL()), still, 'Rest must be visually static');
+    await button.click();
+    await button.locator('img').waitFor();
+    await page.waitForFunction(() => document.querySelector('.composer-kanshan img')?.complete);
+    const clickUrl = await logo.getAttribute('src');
+    assert.notEqual(clickUrl, firstUrl, 'Each play must restart the GIF');
+    await page.clock.fastForward(3000);
+    await button.click();
+    assert.equal(await logo.getAttribute('src'), clickUrl, 'Repeated clicks must not restart or queue playback');
+    await page.clock.fastForward(3000);
+    await button.locator('canvas').waitFor();
+    await page.clock.fastForward(7000);
+    assert.equal(await logo.getAttribute('data-motion-state'), 'idle', 'Click must replace the old automatic deadline');
+    await page.clock.fastForward(1000);
+    await button.locator('img').waitFor();
+    assert.equal(requests.length, 1, 'Playback should reuse one downloaded asset');
+    await page.reload({ waitUntil: 'domcontentloaded' });
+    await button.locator('img').waitFor({ timeout: 3000 });
+    assert.equal(await logo.getAttribute('data-motion-state'), 'playing', 'Refresh should greet without an eight-second delay');
+    await page.emulateMedia({ reducedMotion: 'reduce' });
+    await button.locator('canvas').waitFor();
+    await button.click();
+    await page.clock.fastForward(30000);
+    assert.equal(await logo.getAttribute('data-motion-state'), 'idle');
+    assert.equal(requests.length, 2, 'Only a page refresh should fetch the asset again');
+    assert.deepEqual(errors, []);
+  } finally { await browser.close(); }
+});

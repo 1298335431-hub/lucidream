@@ -1,0 +1,37 @@
+{
+  "schema_version": "0.1",
+  "evidence_id": "EVID-STRUCTURE-001",
+  "audit_status": "ai_checked_pending_human",
+  "audited_at": "2026-09-07",
+  "evidence_type": "open_research",
+  "title": "Examining the association between cultural self-construal and dream structures in China, Japan, and the United States",
+  "author_or_org": "Hisae Konakawa; Toshio Kawai; Yasuhiro Tanaka; Chihiro Hatanaka; Qi Li; Alethea Koh",
+  "edition_or_date": "Frontiers in Psychology, 2026-01-12, Volume 16, Article 1688407",
+  "locator": "Abstract; Materials and methods; Table 1; Discussion",
+  "source_url": "https://doi.org/10.3389/fpsyg.2025.1688407",
+  "source_file_sha256": null,
+  "permitted_use": "允许在署名并引用原始出版物的条件下分享与改编，包括商业用途。梦卡只保存题录和自行撰写的中文概括，不复制论文表格、梦例或图像。",
+  "rights_evidence": {
+    "copyright": "© 2026 Konakawa, Kawai, Tanaka, Hatanaka, Li and Koh",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "article_license_locator": "Frontiers article copyright statement"
+  },
+  "claim_supported": "该研究采用结构梦分析，把整段梦按观察、受威胁、任务要求、移动及受阻、社交互动等结构进行编码，一段梦可以出现多个结构。它可以支持整理叙事结构和组合检索。",
+  "claims_not_supported": [
+    "结构类别本身就是个人心理诊断",
+    "考试、交通受阻或社交互动具有固定象征",
+    "跨文化群体结果可以直接解释单个用户"
+  ],
+  "study_limits": [
+    "结构梦分析是定性解释方法，编码仍需要人工判断",
+    "中国样本招募250人，最终分析173份有效回答，并与美国和日本既有样本比较",
+    "童年梦依靠回忆且未做正式回译，作者也报告了相应方法限制"
+  ],
+  "applies_to_cards": ["DREAM-005", "DREAM-007", "DREAM-008", "DREAM-011", "DREAM-013", "DREAM-017", "DREAM-024", "DREAM-027", "DREAM-033"],
+  "quote_used": false,
+  "rights_status": "cc_by_4_0_ai_checked",
+  "verified_by": "Codex AI辅助核验",
+  "verified_at": "2026-09-07",
+  "verification_status": "pending_human_review"
+}

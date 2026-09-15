@@ -1,0 +1,24 @@
+.voice-input {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  height: 28px;
+  padding: 5px;
+  border: 1px solid rgba(17, 17, 17, .11);
+  border-radius: 999px;
+  background: transparent;
+  color: #777;
+  cursor: pointer;
+  transition: border-color .2s, color .2s;
+}
+.voice-input:hover, .voice-input[aria-pressed="true"] { color: #111; border-color: rgba(17, 17, 17, .24); }
+.voice-input:focus-visible { outline: 1px solid #777; outline-offset: 3px; }
+.voice-input:disabled { cursor: wait; opacity: .65; }
+.voice-input-icon { display: flex; align-items: center; justify-content: center; width: 16px; height: 16px; flex-shrink: 0; }
+.voice-input-stop { width: 10px; height: 10px; background: currentColor; border-radius: 2px; }
+.voice-input-details { display: flex; align-items: center; gap: 7px; overflow: hidden; white-space: nowrap; }
+.voice-input-wave { display: flex; align-items: center; gap: 2px; height: 14px; flex-shrink: 0; }
+.voice-input-bar { width: 2px; height: 13px; border-radius: 999px; background: currentColor; transform-origin: center; }
+.voice-input-time { width: 34px; flex-shrink: 0; font-size: 10px; line-height: 16px; color: #888; font-variant-numeric: tabular-nums; }
+.voice-input-status { padding-right: 4px; font-size: 10px; line-height: 16px; color: #888; }

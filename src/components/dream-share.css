@@ -1,0 +1,46 @@
+.dream-share-entry { display: flex; flex-direction: column; gap: 12px; padding-top: 18px; border-top: 1px solid #c3cde0; }
+.dream-share-entry > button { display: flex; align-items: center; justify-content: center; gap: 6px; }
+.dream-share-brand-label { display: inline-flex; align-items: center; gap: 3px; white-space: nowrap; }
+.dream-share-zhihu-mark { display: block; width: 36px; height: 17px; flex-shrink: 0; object-fit: contain; }
+.dream-share-entry > small { font-size: 11px; }
+.dream-share-dialog { position: fixed; inset: 0; width: min(940px, calc(100vw - 40px)); max-width: none; max-height: calc(100dvh - 40px); margin: auto; padding: 0; overflow: auto; border: 1px solid #e4e6ec; border-radius: 26px; background: #fdfdfe; color: #343841; box-shadow: 0 28px 90px #18213029; }
+.dream-share-dialog::backdrop { background: rgba(27, 32, 43, .28); backdrop-filter: blur(2px); }
+.dream-share-heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 20px; padding: 28px 32px 24px; border-bottom: 1px solid #e9ebef; }
+.dream-share-heading span { color: #89909e; font-size: 11px; }
+.dream-share-heading h2 { margin: 12px 0 8px; font-family: 'Noto Serif SC', serif; font-size: 27px; font-weight: 400; text-wrap: balance; }
+.dream-share-heading p { margin: 0; color: #8b919c; font-size: 13px; }
+.dream-share-close { display: flex; align-items: center; justify-content: center; flex-shrink: 0; width: 40px; height: 40px; border: 1px solid #e3e5eb; border-radius: 50%; background: white; color: #737c8b; }
+.dream-share-content { display: grid; grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr); align-items: start; gap: 32px; padding: 28px 32px; }
+.dream-share-card img { display: block; width: 100%; height: auto; border-radius: 12px; box-shadow: 0 8px 24px #1d283b12; }
+.dream-share-card > p { margin: 14px 0 0; color: #898f99; font-size: 12px; line-height: 1.8; }
+.dream-share-image-status { aspect-ratio: 3 / 4; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 14px; padding: 20px; border-radius: 12px; background: #f0f1f4; color: #7d8593; text-align: center; font-size: 13px; }
+.dream-share-editor { display: flex; flex-direction: column; min-width: 0; }
+.dream-share-editor > label { margin-bottom: 9px; font-size: 13px; }
+.dream-share-editor > input, .dream-share-editor > textarea { width: 100%; min-width: 0; padding: 12px 14px; border: 1px solid #dee1e8; border-radius: 12px; background: #fff; color: #414753; font: inherit; font-size: 14px; line-height: 1.8; }
+.dream-share-editor > input { margin-bottom: 20px; }
+.dream-share-editor > textarea { resize: vertical; min-height: 100px; }
+.dream-share-editor > textarea::placeholder { color: #a0a5ae; }
+.dream-share-editor .dream-share-private-note { margin: 8px 0 18px; color: #9399a3; font-size: 11px; line-height: 1.8; }
+.dream-share-editor .dream-share-reading-toggle { display: flex; align-items: center; gap: 10px; margin-bottom: 0; cursor: pointer; }
+.dream-share-reading-toggle input { width: 17px; height: 17px; flex-shrink: 0; accent-color: #343841; }
+.dream-share-editor .dream-share-text-preview { background: #f6f7f9; color: #707785; font-size: 13px; }
+.dream-share-bottom { padding: 20px 32px 24px; border-top: 1px solid #e9ebef; display: flex; flex-wrap: wrap; align-items: center; gap: 14px 20px; justify-content: space-between; }
+.dream-share-bottom > p { margin: 0; font-size: 12px; color: #747d8b; line-height: 1.8; }
+.dream-share-bottom > p span { color: #949ba5; font-size: 11px; }
+.dream-share-buttons { display: flex; flex-wrap: wrap; gap: 10px; }
+.dream-share-buttons :is(button,a) { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 44px; padding: 10px 20px; font-size: 13px; text-decoration: none; white-space: nowrap; }
+.dream-share-bottom .dream-share-notice { flex-basis: 100%; min-height: 0; }
+.dream-share-notice:empty { display: none; }
+.dream-share-dialog :is(button,a,input,textarea):focus-visible { outline: 2px solid #919aaa; outline-offset: 3px; }
+@media (max-width: 640px) {
+  .dream-share-dialog { width: calc(100vw - 24px); max-height: calc(100dvh - 24px); border-radius: 20px; }
+  .dream-share-heading { padding: 20px; gap: 12px; }
+  .dream-share-heading h2 { font-size: 21px; line-height: 1.6; }
+  .dream-share-content { grid-template-columns: minmax(0, 1fr); gap: 24px; padding: 20px; }
+  .dream-share-card { width: min(100%, 240px); margin: 0 auto; }
+  .dream-share-editor > input, .dream-share-editor > textarea { font-size: 16px; }
+  .dream-share-bottom { padding: 20px; }
+  .dream-share-buttons { width: 100%; }
+  .dream-share-buttons button { flex: 1; padding-inline: 10px; }
+  .dream-share-buttons a { flex-basis: 100%; }
+}

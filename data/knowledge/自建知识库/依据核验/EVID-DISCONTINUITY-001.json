@@ -1,0 +1,38 @@
+{
+  "schema_version": "0.1",
+  "evidence_id": "EVID-DISCONTINUITY-001",
+  "audit_status": "ai_checked_pending_human",
+  "audited_at": "2026-09-07",
+  "evidence_type": "openly_readable_research",
+  "title": "The lack of thematic continuity in dreams with scene and plot discontinuities",
+  "author_or_org": "Robert Stickgold; Funke Sangodeyi",
+  "edition_or_date": "Sleep Advances, online 2024-12-14, Volume 6(1):zpae093",
+  "locator": "Abstract; Methods; Results; Discussion",
+  "source_url": "https://doi.org/10.1093/sleepadvances/zpae093",
+  "source_file_sha256": null,
+  "permitted_use": "在商业产品中只保留题录、链接和自行撰写的事实概括。不得复制、翻译、改写或向量化论文正文、案例、表格和图像；如需超出引用与独立事实概括的使用，应另行取得出版社许可。",
+  "rights_evidence": {
+    "copyright": "© The Author(s) 2024, published by Oxford University Press",
+    "license": "CC BY-NC-ND 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+    "article_license_locator": "PMC article copyright and license statement",
+    "commercial_reuse_note": "Publisher states that commercial reuse requires permission"
+  },
+  "claim_supported": "在20份存在完整场景与情节断裂的梦报告中，评审者区分原始报告和拼接报告的正确率为57%，仅略高于随机水平。这支持产品不要强行把断裂片段归结为同一个隐藏主题。",
+  "claims_not_supported": [
+    "所有梦都缺少主题",
+    "所有场景变化都完全没有联系",
+    "断裂情节能够说明个人异常或疾病"
+  ],
+  "study_limits": [
+    "样本仅20份梦报告和20名评审者",
+    "研究只考察具有完整场景与情节断裂的报告",
+    "作者明确不把样本中的断裂比例当作一般人群发生率"
+  ],
+  "applies_to_cards": ["DREAM-010", "DREAM-020", "DREAM-025", "DREAM-034", "DREAM-051", "DREAM-052", "DREAM-054", "DREAM-056", "DREAM-058", "DREAM-060", "DREAM-062", "DREAM-074", "DREAM-075"],
+  "quote_used": false,
+  "rights_status": "cite_only_ai_checked",
+  "verified_by": "Codex AI辅助核验",
+  "verified_at": "2026-09-07",
+  "verification_status": "pending_human_review"
+}

@@ -1,0 +1,40 @@
+{
+  "schema_version": "0.1",
+  "evidence_id": "EVID-TEETH-001",
+  "audit_status": "ai_checked_pending_human",
+  "audited_at": "2026-09-07",
+  "evidence_type": "open_research",
+  "title": "Dreams of Teeth Falling Out: An Empirical Investigation of Physiological and Psychological Correlates",
+  "author_or_org": "Naama Rozen; Nirit Soffer-Dudek",
+  "edition_or_date": "Frontiers in Psychology, 2018-09-26, 9:1812",
+  "locator": "Abstract; Materials and Methods, Participants and Procedure; Results; Discussion; Copyright",
+  "source_url": "https://doi.org/10.3389/fpsyg.2018.01812",
+  "source_file_sha256": null,
+  "permitted_use": "允许在署名、链接原始出版物并遵守 CC BY 4.0 的条件下分享与改编，包括商业用途。梦卡只保存题录和自行撰写的中文事实概括，不复制问卷条目、正文、表格或图像。",
+  "rights_evidence": {
+    "copyright": "© 2018 Rozen and Soffer-Dudek",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "article_license_locator": "Frontiers article copyright statement and publisher open-access policy"
+  },
+  "claim_supported": "对210名本科生的横断面自报研究发现，牙齿梦与醒来后的牙齿、牙龈或下颌紧张感呈小到中等相关，与研究中测量的心理痛苦没有显著关联。作者将结果明确称为初步发现。该结果支持询问醒后口腔和下颌感受，不支持诊断磨牙或给出固定象征。",
+  "claims_not_supported": [
+    "牙齿梦可以诊断磨牙症或牙科疾病",
+    "牙齿脱落固定代表焦虑、衰老、死亡、性或关系变化",
+    "相关性证明口腔刺激导致牙齿梦"
+  ],
+  "study_limits": [
+    "样本为210名本科生，女性占76.7%，年龄18至28岁",
+    "横断面研究依赖单项自我报告，没有客观睡眠或牙科测量",
+    "牙齿梦与紧张感的相关效应有限，结果仍待更大样本复现",
+    "牙科刺激题目比主要问卷晚约3周收集"
+  ],
+  "applies_to_cards": [
+    "DREAM-035"
+  ],
+  "quote_used": false,
+  "rights_status": "cc_by_4_0_ai_checked",
+  "verified_by": "Codex AI辅助核验",
+  "verified_at": "2026-09-07",
+  "verification_status": "pending_human_review"
+}

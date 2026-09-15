@@ -1,0 +1,58 @@
+.dream-card-logo {
+  display: block;
+  flex: none;
+  overflow: visible;
+}
+
+.dream-card-logo--web {
+  --dream-logo-back: #a0b8e0;
+  --dream-logo-front: #ffffff;
+  --dream-logo-accent: #8094cc;
+  --dream-logo-line: #c0ccec;
+  color: #8878c0;
+}
+
+.dream-card-logo--card {
+  --dream-logo-back: #9c968d;
+  --dream-logo-front: #e4dfd6;
+  --dream-logo-accent: #c8c1b5;
+  --dream-logo-line: #b4aea5;
+  color: #9c968d;
+}
+
+.dream-card-logo__back { transform: rotate(10deg) scale(1); transform-origin: center; }
+.dream-card-logo__back-fill { fill: var(--dream-logo-back); }
+.dream-card-logo__front-fill { fill: var(--dream-logo-front); }
+.dream-card-logo__moon, .dream-card-logo__star-fill { fill: var(--dream-logo-accent); }
+.dream-card-logo__line--primary { fill: var(--dream-logo-line); opacity: .85; }
+.dream-card-logo__line--secondary { fill: var(--dream-logo-line); opacity: .5; }
+
+.dream-card-logo.is-animated .dream-card-logo__back {
+  animation: dream-card-logo-back-in .7s cubic-bezier(.34, 1.4, .64, 1) both;
+}
+.dream-card-logo.is-animated .dream-card-logo__front {
+  animation: dream-card-logo-front-in .6s cubic-bezier(.34, 1.4, .64, 1) .2s both;
+}
+.dream-card-logo.is-animated .dream-card-logo__star {
+  transform-origin: center;
+  animation: dream-card-logo-star-in .45s cubic-bezier(.34, 1.6, .64, 1) .55s both;
+}
+
+@keyframes dream-card-logo-back-in {
+  from { opacity: 0; transform: rotate(22deg) scale(.88); }
+  to { opacity: 1; transform: rotate(10deg) scale(1); }
+}
+@keyframes dream-card-logo-front-in {
+  from { opacity: 0; transform: translateY(24px) scale(.92); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+@keyframes dream-card-logo-star-in {
+  from { opacity: 0; transform: scale(0) rotate(-30deg); }
+  to { opacity: 1; transform: scale(1) rotate(0deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .dream-card-logo.is-animated .dream-card-logo__back,
+  .dream-card-logo.is-animated .dream-card-logo__front,
+  .dream-card-logo.is-animated .dream-card-logo__star { animation: none; }
+}

@@ -1,0 +1,40 @@
+{
+  "schema_version": "0.1",
+  "evidence_id": "EVID-DROWNING-001",
+  "audit_status": "ai_checked_pending_human",
+  "audited_at": "2026-09-07",
+  "evidence_type": "public_domain_government_health_information",
+  "title": "Drowning Facts",
+  "author_or_org": "Centers for Disease Control and Prevention, National Center for Injury Prevention and Control",
+  "edition_or_date": "CDC, updated 2026-01-27",
+  "locator": "What to know; What is drowning?",
+  "source_url": "https://www.cdc.gov/drowning/data-research/facts/index.html",
+  "source_file_sha256": null,
+  "permitted_use": "CDC Stacks将该资料标为Public Domain。梦卡只用自行撰写的中文事实概括并标明CDC来源，不复制页面图片、第三方材料或商标。",
+  "rights_evidence": {
+    "copyright": "U.S. federal government work; CDC Stacks record marked Public Domain",
+    "license": "public_domain",
+    "rights_url": "https://stacks.cdc.gov/view/cdc/130749"
+  },
+  "claim_supported": "真实发生的非致命溺水也可能造成严重或长期健康后果，因此当用户明确描述现实中的溺水或呼吸受损事件时，产品应离开梦象解释流程并优先提示现实安全支持。",
+  "claims_not_supported": [
+    "梦见溺水表示用户现实中发生了溺水",
+    "仅凭梦中呼吸困难诊断现实疾病",
+    "用本资料替代急救人员或医疗专业人员的判断"
+  ],
+  "study_limits": [
+    "本资料是公共卫生事实页，不是梦境研究",
+    "它只用于用户明确报告现实事件时的安全分流"
+  ],
+  "replaces_source": {
+    "title": "MedlinePlus Medical Encyclopedia: Non-fatal drowning",
+    "url": "https://medlineplus.gov/ency/article/000046.htm",
+    "reason": "该页由A.D.A.M.提供并明确禁止未经书面许可的复制、改写、存储、索引、向量化和AI用途，因此已从知识卡依据中移除"
+  },
+  "applies_to_cards": ["DREAM-065"],
+  "quote_used": false,
+  "rights_status": "public_domain_ai_checked",
+  "verified_by": "Codex AI辅助核验",
+  "verified_at": "2026-09-07",
+  "verification_status": "pending_human_review"
+}

@@ -1,0 +1,40 @@
+{
+  "schema_version": "0.1",
+  "evidence_id": "EVID-DECEASED-001",
+  "audit_status": "ai_checked_pending_human",
+  "audited_at": "2026-09-07",
+  "evidence_type": "open_research",
+  "title": "Dreams of the deceased: A scoping and mixed-methods systematic review",
+  "author_or_org": "Zulkayda Mamat; Rumia B. Owaisi; Sarif Alrai; Ayse Kaya Goktepe; Jacob White; Peter J. Bayley; Khalid Elzamzamy",
+  "edition_or_date": "Sleep Medicine, 2026-04, 140:108787; online 2026-01-16",
+  "locator": "Highlights; Abstract",
+  "source_url": "https://doi.org/10.1016/j.sleep.2026.108787",
+  "source_file_sha256": null,
+  "permitted_use": "文章采用 CC BY-NC 4.0。商业产品中只保留题录、链接和独立撰写的摘要层面事实概括，不复制、翻译、改写、嵌入或向量化全文、表格与图像。商业复用原材料需要另行取得许可。",
+  "rights_evidence": {
+    "copyright": "© 2026 The Authors; published by Elsevier B.V.",
+    "license": "CC BY-NC 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-nc/4.0/",
+    "article_license_locator": "ScienceDirect article page and Crossref version-of-record license metadata"
+  },
+  "claim_supported": "综述从4030条初始记录中纳入110篇范围综述资料，并将76篇纳入混合方法系统综述。文献跨越不同文化与人群，常见报告包括安慰、指引感和持续联结，也可能包含困扰；纳入研究以质性方法为主。它可以支持承认这类体验的多样情绪，不能证明亡者正在传递消息。",
+  "claims_not_supported": [
+    "梦见已故亲友证明亡者通讯或托梦",
+    "梦境能够预知生死或要求用户采取现实行动",
+    "所有这类梦都具有安慰或疗愈作用"
+  ],
+  "study_limits": [
+    "混合方法综述中质性研究占主导，不能从主题频率推导个体因果",
+    "纳入文献在文化、研究对象和方法上存在明显差异",
+    "当前核验以正式题录、摘要和出版页面为主，没有将全文作为产品语料",
+    "文章采用非商业许可，不能直接作为商业产品的可改编语料"
+  ],
+  "applies_to_cards": [
+    "DREAM-023"
+  ],
+  "quote_used": false,
+  "rights_status": "cite_only_ai_checked",
+  "verified_by": "Codex AI辅助核验",
+  "verified_at": "2026-09-07",
+  "verification_status": "pending_human_review"
+}

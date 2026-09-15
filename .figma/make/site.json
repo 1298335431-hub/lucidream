@@ -1,0 +1,10 @@
+{
+  "description": "Create personalized dream scenarios with this web app, designed for users seeking inspiration and creativity in their dream exploration.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

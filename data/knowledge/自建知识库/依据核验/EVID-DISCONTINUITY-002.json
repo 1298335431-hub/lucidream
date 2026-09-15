@@ -1,0 +1,37 @@
+{
+  "schema_version": "0.1",
+  "evidence_id": "EVID-DISCONTINUITY-002",
+  "audit_status": "ai_checked_pending_human",
+  "audited_at": "2026-09-07",
+  "evidence_type": "open_research_review",
+  "title": "What about dreams? State of the art and open questions",
+  "author_or_org": "Serena Scarpelli; Valentina Alfonsi; Maurizio Gorgoni; Luigi De Gennaro",
+  "edition_or_date": "Journal of Sleep Research, 2022-04-13, 31(4):e13609",
+  "locator": "Summary; Introduction; 1.1 REM–NREM sleep dichotomy; 1.3 Continuity between waking and dream experience; Conclusions",
+  "source_url": "https://doi.org/10.1111/jsr.13609",
+  "source_file_sha256": null,
+  "permitted_use": "允许在署名并标明原始来源的条件下使用、传播与复制，包括商业用途。梦卡只保留自行撰写的中文概括，不复制论文段落、表格或图像。",
+  "rights_evidence": {
+    "copyright": "© 2022 The Authors",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "article_license_locator": "PMC article copyright and license statement"
+  },
+  "claim_supported": "综述把梦境描述为可包含图像、感觉、思想、情绪、言语和动作的复合体验，并讨论鲜明、情绪化、怪异的梦报告以及清醒经历与梦境之间可能存在的连续性。它只支持保留用户自己报告的不合现实规则体验。",
+  "claims_not_supported": [
+    "梦报告必然包含角色突变、时间倒流或人物重组",
+    "怪异梦境能够证明疾病、人格或现实危险",
+    "特定梦象与现实事件存在固定对应"
+  ],
+  "study_limits": [
+    "这是梦科学开放问题综述，不是针对特定梦象的实验",
+    "综述明确指出梦研究仍有方法不统一和只能间接获取报告等局限",
+    "不能把一般性的梦体验描述扩写成用户未提供的具体情节"
+  ],
+  "applies_to_cards": ["DREAM-048", "DREAM-050"],
+  "quote_used": false,
+  "rights_status": "cc_by_4_0_ai_checked",
+  "verified_by": "Codex AI辅助核验",
+  "verified_at": "2026-09-07",
+  "verification_status": "pending_human_review"
+}

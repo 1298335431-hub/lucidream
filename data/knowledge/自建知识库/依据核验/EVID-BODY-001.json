@@ -1,0 +1,44 @@
+{
+  "schema_version": "0.1",
+  "evidence_id": "EVID-BODY-001",
+  "audit_status": "ai_checked_pending_human",
+  "audited_at": "2026-09-07",
+  "evidence_type": "open_research",
+  "title": "Influencing dreams through sensory stimulation: A systematic review",
+  "author_or_org": "Leila Salvesen; Elena Capriglia; Martin Dresler; Giulio Bernardi",
+  "edition_or_date": "Sleep Medicine Reviews, 2024-04, 74:101908",
+  "locator": "Abstract; Methods 2.1–2.4; Results 3.1; Discussion 4.1; Conclusions",
+  "source_url": "https://doi.org/10.1016/j.smrv.2024.101908",
+  "source_file_sha256": null,
+  "permitted_use": "文章采用 CC BY-NC 4.0。商业产品中只保留题录、链接和独立撰写的事实概括，不复制、翻译、改写、嵌入或向量化正文、表格与图像。若将来需要使用许可覆盖的材料，应另行取得商业授权。",
+  "rights_evidence": {
+    "copyright": "© 2024 The Authors",
+    "license": "CC BY-NC 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-nc/4.0/",
+    "article_license_locator": "PMC article copyright and license statement"
+  },
+  "claim_supported": "系统综述纳入51篇在睡眠中施加感觉刺激的实验研究。部分研究报告外界刺激会直接、间接或以其他方式改变梦报告，但各研究报告的发生比例从0到约80%不等，定义和方法高度异质。因此可以温和提示睡眠中的身体或环境感觉有时可能进入梦境，不能据此认定梦中感觉对应某种现实疾病。",
+  "claims_not_supported": [
+    "从梦中疼痛、憋气、迟缓或外貌变化诊断现实疾病",
+    "梦中的身体部位与现实病变存在稳定的一一对应",
+    "把实验性外部刺激研究当作普通梦境的个体因果证明"
+  ],
+  "study_limits": [
+    "纳入研究在刺激方式、睡眠阶段、梦报告采集和纳入标准上高度异质，无法进行元分析",
+    "不同研究报告的刺激相关梦境变化比例跨度很大",
+    "综述研究的是实验性感觉刺激，不是对单个自然梦境的诊断",
+    "文章采用非商业许可，不能直接作为商业产品的可改编语料"
+  ],
+  "applies_to_cards": [
+    "DREAM-064",
+    "DREAM-065",
+    "DREAM-066",
+    "DREAM-067",
+    "DREAM-068"
+  ],
+  "quote_used": false,
+  "rights_status": "cite_only_ai_checked",
+  "verified_by": "Codex AI辅助核验",
+  "verified_at": "2026-09-07",
+  "verification_status": "pending_human_review"
+}

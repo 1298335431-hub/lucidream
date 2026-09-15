@@ -1,0 +1,40 @@
+{
+  "schema_version": "0.1",
+  "evidence_id": "EVID-LOST-001",
+  "audit_status": "ai_checked_pending_human",
+  "audited_at": "2026-09-07",
+  "evidence_type": "openly_readable_research",
+  "title": "Nightmare Themes: An Online Study of Most Recent Nightmares and Childhood Nightmares",
+  "author_or_org": "Michael Schredl; Anja S. Göritz",
+  "edition_or_date": "Journal of Clinical Sleep Medicine, 2018-03-15, 14(3):465–471",
+  "locator": "Methods; Results, Nightmare Topics; Table 2",
+  "source_url": "https://doi.org/10.5664/jcsm.7002",
+  "source_file_sha256": null,
+  "permitted_use": "可以引用题录并自行概括研究事实。未确认到允许商业改编或全文再分发的 Creative Commons 许可，因此不得复制正文、表格或图片，也不得把全文加入生产 RAG。",
+  "rights_evidence": {
+    "copyright": "© 2018 American Academy of Sleep Medicine",
+    "license": "no_open_reuse_license_confirmed",
+    "pmc_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5837849/",
+    "canonical_audit_record": "DREAM-001-被追赶.json#EVID-CHASE-002"
+  },
+  "claim_supported": "研究的梦魇主题编码把迟到、迷路、无法说话、遗忘和犯错等放在失败或无助类。这个结果只支持把迷路与目标、时间、寻找和受阻等情节一起记录，不能说明梦者在现实中缺少方向。",
+  "claims_not_supported": [
+    "迷路代表人生没有方向",
+    "迷路梦预示事业、关系或出行受阻",
+    "梦魇主题分类能够用于个体诊断"
+  ],
+  "study_limits": [
+    "在线样本包含主动注册参与研究的人",
+    "研究分析梦魇主题，不覆盖所有中性或探索性的迷路梦",
+    "主题编码不是个体象征解释",
+    "本记录与 EVID-CHASE-002 和 EVID-WATER-001 使用同一来源，权利核验复用其结论"
+  ],
+  "applies_to_cards": [
+    "DREAM-004"
+  ],
+  "quote_used": false,
+  "rights_status": "cite_only_ai_checked",
+  "verified_by": "Codex AI辅助核验",
+  "verified_at": "2026-09-07",
+  "verification_status": "pending_human_review"
+}

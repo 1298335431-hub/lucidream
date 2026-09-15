@@ -1,0 +1,41 @@
+{
+  "schema_version": "0.1",
+  "evidence_id": "EVID-WATER-002",
+  "audit_status": "support_mismatch_removed_pending_human",
+  "audited_at": "2026-09-07",
+  "evidence_type": "open_research",
+  "title": "Consciousness across Sleep and Wake: Discontinuity and Continuity of Memory Experiences As a Reflection of Consolidation Processes",
+  "author_or_org": "Caroline L. Horton",
+  "edition_or_date": "Frontiers in Psychiatry, 2017-09-07, 8:159",
+  "locator": "Abstract; Continuity in Its General Form; What is Discontinuity?; Copyright",
+  "source_url": "https://doi.org/10.3389/fpsyt.2017.00159",
+  "source_file_sha256": null,
+  "permitted_use": "允许在署名、链接原始出版物并遵守 CC BY 4.0 的条件下分享与改编，包括商业用途。当前不把文章全文加入生产 RAG，只保留题录和独立撰写的通用研究概括。",
+  "rights_evidence": {
+    "copyright": "© 2017 Horton",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "article_license_locator": "Frontiers article copyright statement and publisher open-access policy"
+  },
+  "claim_supported": "这篇理论与综述性文章讨论清醒经历如何以部分、重组或断裂的形式进入梦境，并强调连续性概念仍有定义和测量困难。它可以作为梦境与清醒记忆关系的通用背景，不能为水域梦提供主题特异的解释。",
+  "claims_not_supported": [
+    "水域画面与某种现实情绪存在直接对应",
+    "水的颜色、深浅或流向能够判断现实事件",
+    "由梦境片段推断个体记忆正在以某种方式巩固"
+  ],
+  "study_limits": [
+    "文章类型为 Hypothesis and Theory，提出理论框架而非验证水域梦的实证研究",
+    "正文没有提供水域主题的专门数据或结论",
+    "连续与不连续的操作定义仍存在困难"
+  ],
+  "removed_from_cards": [
+    "DREAM-015"
+  ],
+  "removal_reason": "来源与水域主题不存在直接支持关系，且原依据清单把作者误写为 Sue Llewellyn。已撤下该卡片关联，来源保留为通用背景候选并等待人工复核。",
+  "applies_to_cards": [],
+  "quote_used": false,
+  "rights_status": "cc_by_4_0_support_mismatch_ai_checked",
+  "verified_by": "Codex AI辅助核验",
+  "verified_at": "2026-09-07",
+  "verification_status": "pending_human_review"
+}

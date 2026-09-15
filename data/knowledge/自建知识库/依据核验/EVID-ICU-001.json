@@ -1,0 +1,40 @@
+{
+  "schema_version": "0.1",
+  "evidence_id": "EVID-ICU-001",
+  "audit_status": "ai_checked_pending_human",
+  "audited_at": "2026-09-07",
+  "evidence_type": "open_research",
+  "title": "Dream Experiences During Intensive Care Unit Stay: Occurrence, Content, Vividness and Associated Factors",
+  "author_or_org": "Adrienne E. van der Hoeven; Rolf Fronczek; Denise Bijlenga; Sarah Hadra; Caro Ridder; Marlies Henneman; Jessica A. Maas; Suzanna A. Goedemans-de Graaf; Gert Jan Lammers; David J. van Westerloo; Mink S. Schinkelshoek",
+  "edition_or_date": "Nursing in Critical Care, 2025-07, 30(4):e70106",
+  "locator": "Abstract; Study Design; Results; Discussion 6.1–6.3; Table 2",
+  "source_url": "https://doi.org/10.1111/nicc.70106",
+  "source_file_sha256": null,
+  "permitted_use": "允许在完整署名、引用原始出版物并遵守 CC BY 4.0 的条件下分享与改编，包括商业用途。梦卡只保存题录和自行撰写的中文事实概括，不复制参与者原话、正文、表格或图像。",
+  "rights_evidence": {
+    "copyright": "© 2025 The Author(s); Nursing in Critical Care published by John Wiley & Sons Ltd on behalf of British Association of Critical Care Nurses",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "article_license_locator": "PMC article copyright and license statement"
+  },
+  "claim_supported": "一项对80名既往 ICU 患者进行的回顾性混合方法研究在出院后中位9个月访问。63人报告过梦境体验，其中46人报告鲜明梦境；部分体验带有负面情绪，并在醒后继续产生影响。该研究可以支持在用户明确提到真实 ICU 经历和持续困扰时优先提供现实关怀。",
+  "claims_not_supported": [
+    "医院或诊所场景梦说明用户患病或需要住院",
+    "仅凭梦境判断谵妄、知觉障碍或临床风险",
+    "把 ICU 患者样本的比例外推到普通梦境用户"
+  ],
+  "study_limits": [
+    "单中心样本仅80人，纳入条件包含住院时长或 COVID-19 等特定情况",
+    "出院后中位9个月回顾，可能存在回忆和选择偏差",
+    "梦境、知觉障碍和谵妄存在重叠，许多参与者不能清楚区分",
+    "研究对象是实际 ICU 住院经历，不支持解释一般医院场景梦"
+  ],
+  "applies_to_cards": [
+    "DREAM-018"
+  ],
+  "quote_used": false,
+  "rights_status": "cc_by_4_0_ai_checked",
+  "verified_by": "Codex AI辅助核验",
+  "verified_at": "2026-09-07",
+  "verification_status": "pending_human_review"
+}

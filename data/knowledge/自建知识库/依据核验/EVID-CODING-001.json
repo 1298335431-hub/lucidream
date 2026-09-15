@@ -1,0 +1,37 @@
+{
+  "schema_version": "0.1",
+  "evidence_id": "EVID-CODING-001",
+  "audit_status": "ai_checked_pending_human",
+  "audited_at": "2026-09-07",
+  "evidence_type": "open_research",
+  "title": "Our dreams, our selves: automatic analysis of dream reports",
+  "author_or_org": "Alessandro Fogli; Luca Maria Aiello; Daniele Quercia",
+  "edition_or_date": "Royal Society Open Science, 2020-08-26, 7(8):192080",
+  "locator": "Abstract; 2.2 Modern dream coding; 4.1 Dream coding system",
+  "source_url": "https://doi.org/10.1098/rsos.192080",
+  "source_file_sha256": null,
+  "permitted_use": "允许在署名并标明原始来源的条件下分享与改编，包括商业用途。梦卡只保存题录、自行撰写的中文事实概括和使用边界，不复制论文段落、表格或图像。",
+  "rights_evidence": {
+    "copyright": "© 2020 The Authors",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "article_license_locator": "PMC article copyright and license statement"
+  },
+  "claim_supported": "Hall–Van de Castle 内容分析体系可以把梦报告中的人物、互动、情绪、活动、成败、幸与不幸、场景与物件、描述性特征、饮食和过去元素作为编码类别。该论文据此开发自动评分工具并分析约24000份梦报告。",
+  "claims_not_supported": [
+    "由单一梦象推断个人处境、人格或疾病",
+    "给人物、动物、物件或场景规定固定象征",
+    "用一份梦报告完成个体心理诊断"
+  ],
+  "study_limits": [
+    "论文重点是自动内容编码与群体层面分析，不是面向个人的解梦工具",
+    "自动工具主要计算人物、互动和情绪等指标，不能替代人工语境判断",
+    "群体差异与连续性证据不能直接套用到单个用户"
+  ],
+  "applies_to_cards": ["DREAM-008", "DREAM-009", "DREAM-014", "DREAM-016", "DREAM-019", "DREAM-026", "DREAM-028", "DREAM-029", "DREAM-031", "DREAM-032", "DREAM-036", "DREAM-037", "DREAM-038", "DREAM-039", "DREAM-040", "DREAM-041", "DREAM-042", "DREAM-043", "DREAM-044", "DREAM-045", "DREAM-046", "DREAM-047", "DREAM-048", "DREAM-049", "DREAM-050", "DREAM-051", "DREAM-053", "DREAM-054", "DREAM-055", "DREAM-056", "DREAM-057", "DREAM-058", "DREAM-059", "DREAM-060", "DREAM-061", "DREAM-062", "DREAM-063", "DREAM-068", "DREAM-070", "DREAM-071", "DREAM-073"],
+  "quote_used": false,
+  "rights_status": "cc_by_4_0_ai_checked",
+  "verified_by": "Codex AI辅助核验",
+  "verified_at": "2026-09-07",
+  "verification_status": "pending_human_review"
+}

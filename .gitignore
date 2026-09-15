@@ -1,0 +1,58 @@
+node_modules/
+.DS_Store
+dist/
+build/
+.cache/
+.env*
+!.env.example
+.venv/
+__pycache__/
+*.py[cod]
+data/*.db
+data/knowledge/*.sqlite3
+data/knowledge/解梦素材/**/*.pdf
+data/knowledge/解梦素材/**/*.txt
+data/knowledge/解梦素材/**/*.jsonl
+data/knowledge/解梦素材/**/*.partial
+backend/.pytest_cache/
+.vite/
+vite.config.*.timestamp-*
+*.tsbuildinfo
+*-debug.log*
+logs/
+backups/
+deployment/*.env
+*.log
+.claude-replay.*
+.tmp-*
+/.tools/
+
+# Platform-managed agentplat state, not project source. In the
+# client-initiated single-repo workspace layout (make's `Path: "."` spec) the
+# repo root IS the workspace root, so these land inside this repo rather than
+# beside it.
+/.plugins/
+/.opencode-skills/
+.vefaas/
+
+# Private state, downloaded books, and local development artifacts
+*.db
+*.db-*
+*.sqlite*
+*.pem
+*.key
+*.p12
+.pytest_cache/
+**/.codex/
+**/.agents/
+/data/knowledge/解梦素材/
+/implementation-*.png
+/design-qa*.png
+/qa-*.png
+/design-qa.md
+/CLAUDE.md
+/.figma/make/*
+!/.figma/make/site.json
+*.zip
+*.tar.gz
+*.whl
