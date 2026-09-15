@@ -1,26 +1,78 @@
+<div align="center">
+
 # LUCIDREAM · 梦境回声
 
-### 看山说梦，将梦境留作一张卡
+### 将梦境，留作一张卡
 
-记录醒来时的梦境片段，确认梦象，阅读 AI 解读，再生成一张可以保存与分享的梦卡。为知乎黑客松制作的 Web 应用，包含前端、后端及知乎登录适配服务。
+看山说梦 · AI 梦境解读与梦卡创作
 
-[在线体验](https://seoshulk2a6fn66jib6rs.apigateway-cn-beijing.volceapi.com/) · [架构说明](docs/ARCHITECTURE.md) · [开发指南](CONTRIBUTING.md) · [安全说明](SECURITY.md)
+由 [小七](https://github.com/zhl-1-2) 制作 · 知乎黑客松参赛作品
 
-> 当前线上为临时演示版，未接入持久化云存储。服务重启、回收或重新部署可能清除记录与图片，请及时下载梦卡。演示地址不承诺长期可用
+[在线体验](https://seoshulk2a6fn66jib6rs.apigateway-cn-beijing.volceapi.com/) · [观看演示](https://github.com/zhl-1-2/lucidream/releases/tag/demo-video-2026-09-15) · [本地运行](#本地运行) · [架构说明](docs/ARCHITECTURE.md)
 
-## 功能
+[![核心检查](https://github.com/zhl-1-2/lucidream/actions/workflows/ci.yml/badge.svg)](https://github.com/zhl-1-2/lucidream/actions/workflows/ci.yml)
 
-- **梦境记录与确认**：输入梦境，提取并修订场景、角色、物品、情绪等梦象
-- **AI 文字解读**：整理梦境片段与探索性解读，支持返回修改与复制文字
-- **梦卡创作**：生成画面，调整展示元素与边框，导出 1080 × 1440 PNG
-- **梦境册与额度**：按账号保存记录，默认 8 次生图额度，同一任务故障重试不重复扣额
-- **知乎登录与体验码**：支持 OAuth 登录及独立体验码，展示已授权用户的头像和昵称
-- **分享准备**：用户编辑故事、选择是否包含解读，下载梦卡、复制文案，再自行到知乎发布
-- **刘看山轻量向导**：不同页面使用不同官方动作，入场播放一轮、静止约 8 秒再播放，支持点击及减少动态效果偏好
+</div>
 
-**分享边界**：目前没有以用户身份自动发布到知乎的能力，也不会使用产品账号代发。点击“打开知乎”不会自动带入文案或图片，最终发布由用户在知乎确认。
+记录醒来时还记得的片段，由你确认每一处梦象，再阅读 AI 解读，生成属于这场梦的画面。梦卡可以下载留存，也可以配上自己的故事，带到知乎分享
 
-**解读边界**：AI 内容仅用于文化解释与自我探索，不预测现实，不替代医疗或心理专业建议。
+[![LUCIDREAM 梦卡制作界面，点击查看演示视频](docs/images/demo-cover.png)](https://github.com/zhl-1-2/lucidream/releases/tag/demo-video-2026-09-15)
+
+## 先看一场梦如何变成卡片
+
+**[观看完整演示 · 2 分 49 秒](https://github.com/zhl-1-2/lucidream/releases/tag/demo-video-2026-09-15)** · [下载 1080p 视频](https://github.com/zhl-1-2/lucidream/releases/download/demo-video-2026-09-15/lucidream-demo-1080p.mp4)
+
+视频从云海洗衣店的一场梦开始，实际走过梦象确认、文字解读和画面生成，随后调整边框、下载梦卡并准备分享文案。使用真实模型生成，部分等待过程已加速并标注；视频含步骤字幕，无旁白
+
+## 梦卡作品
+
+以下为小七挑选的实际生成作品，点击图片可查看大图。画面与文字由 AI 生成，不同梦境与生成批次的结果会有差异
+
+<table>
+  <tr>
+    <td width="33%"><a href="public/assets/showcase/portfolio/glass-sky.png"><img src="public/assets/showcase/portfolio/glass-sky.png" alt="火山口钟表店与融化的玻璃天空梦卡" width="100%"></a></td>
+    <td width="33%"><a href="public/assets/showcase/portfolio/cloud-post-office.png"><img src="public/assets/showcase/portfolio/cloud-post-office.png" alt="云端邮局与无轮列车梦卡" width="100%"></a></td>
+    <td width="33%"><a href="public/assets/showcase/portfolio/inverted-library.png"><img src="public/assets/showcase/portfolio/inverted-library.png" alt="倒生图书馆与玻璃钥匙梦卡" width="100%"></a></td>
+  </tr>
+  <tr>
+    <td align="center">融化的玻璃天空</td>
+    <td align="center">云端邮局与无轮列车</td>
+    <td align="center">倒生图书馆与玻璃钥匙</td>
+  </tr>
+</table>
+
+## 从记录到分享
+
+```text
+记录梦境 → 确认梦象 → 阅读解读 → 生成梦卡 → 下载留存
+                                            └→ 整理文案 → 自行到知乎发布
+```
+
+| 环节 | 可以做什么 |
+| --- | --- |
+| 记录与确认 | 输入梦境，修订场景、角色、物品和情绪，先确认内容再生成 |
+| AI 文字解读 | 阅读梦境片段与探索性解读，支持返回修改与复制文字 |
+| 梦卡创作 | 生成画面，调整展示元素与边框，导出 1080 × 1440 PNG |
+| 梦境册 | 按账号回看记录，默认 8 次生图额度，同一任务故障重试不重复扣额 |
+| 登录 | 支持知乎 OAuth 与独立体验码，展示已授权用户的头像和昵称 |
+
+## 与知乎的连接
+
+刘看山作为轻量向导陪伴不同页面，使用不同官方动作。进入页面先播放一轮，静止约 8 秒后再播放，也可以点击触发，并兼顾减少动态效果的偏好
+
+完成梦卡后，可以编辑想分享的故事，选择是否附上解读，再下载图片、复制文案，由自己在知乎账号中发布
+
+**当前分享需要手动发布**。应用不会以用户身份自动发帖，也不会使用产品账号代发；“打开知乎”不会自动带入文案或图片
+
+## 体验前须知
+
+- 线上为临时演示版，未接入持久化云存储，服务重启、回收或重新部署可能清除记录与图片，请及时下载梦卡
+- 演示地址不承诺长期可用；同一个体验码对应同一个账号，不应多人共用
+- AI 解读仅用于文化解释与自我探索，不预测现实，不替代医疗或心理专业建议
+
+---
+
+以下为开发与部署说明。如果希望本地体验，可以先使用无需模型密钥的 mock 模式
 
 ## 技术栈与目录
 
@@ -64,11 +116,11 @@ cp .env.example .env
 .venv/bin/uvicorn app.main:app --app-dir backend --host 127.0.0.1 --port 8001 --reload
 ```
 
-本地接口文档：<http://127.0.0.1:8001/docs>
+本地接口文档见 <http://127.0.0.1:8001/docs>
 
 ### 3. 创建自己的本地体验码
 
-另开终端，在仓库根目录运行：
+另开终端，在仓库根目录运行
 
 ```bash
 PYTHONPATH=backend .venv/bin/python backend/scripts/manage_invites.py --issue 1
@@ -84,7 +136,7 @@ pnpm dev
 
 打开 <http://127.0.0.1:8443/>，使用刚创建的体验码登录。前端会把 `/api` 与 `/auth/callback` 代理到后端 8001 端口；本地体验码模式无需启动知乎服务。
 
-### 5. 可选：真实模型与知乎登录
+### 5. 可选的真实模型与知乎登录
 
 - 在本地 `.env` 设置 `DREAMCARD_MODEL_MODE=aliyun` 和 `DASHSCOPE_API_KEY`，模型名称须与你的阿里云账号权限匹配，真实调用会计费
 - 知乎登录配置、私有服务端口与回调登记见 [OAuth 接入说明](integrations/zhihu-login/README.md)
@@ -116,3 +168,9 @@ GitHub Actions 自动执行上述核心检查，不使用真实密钥，不发�
 本仓库暂未授予通用开源许可。第三方依赖遵循各自许可证，知乎字标与刘看山形象权利归其权利人所有；赛事素材的使用不代表官方运营或商业授权。赛后商用需另行确认授权，见 [第三方素材说明](THIRD_PARTY_NOTICES.md)。
 
 真实密钥、用户梦境数据库、个人会话、原始书籍、缓存及临时构建产物均不属于源码发布内容。
+
+## 作者与反馈
+
+**小七** · [GitHub @zhl-1-2](https://github.com/zhl-1-2)
+
+体验中的问题与功能建议欢迎提交到 [Issues](https://github.com/zhl-1-2/lucidream/issues)，开发贡献见 [贡献指南](CONTRIBUTING.md)。涉及密钥、账号或隐私的问题请先阅读 [安全说明](SECURITY.md)，不要公开提交梦境隐私与凭证
