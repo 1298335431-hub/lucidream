@@ -6,7 +6,7 @@
 
 看山说梦 · AI 梦境解读与梦卡创作
 
-由 [小七](https://github.com/zhl-1-2) 制作 · 知乎黑客松参赛作品
+作者 [白一帆](https://github.com/1298335431-hub) · 团队合作项目 · 知乎黑客松参赛作品
 
 [在线体验](https://seoshulk2a6fn66jib6rs.apigateway-cn-beijing.volceapi.com/) · [在线观看演示](https://zhl-1-2.github.io/lucidream/) · [本地运行](#本地运行) · [架构说明](docs/ARCHITECTURE.md)
 
@@ -28,7 +28,7 @@
 
 ## 梦卡作品
 
-以下为小七挑选的实际生成作品，点击图片可查看大图。画面与文字由 AI 生成，不同梦境与生成批次的结果会有差异
+以下为团队挑选的实际生成作品，点击图片可查看大图。画面与文字由 AI 生成，不同梦境与生成批次的结果会有差异
 
 <table>
   <tr>
@@ -175,6 +175,7 @@ GitHub Actions 自动执行上述核心检查，不使用真实密钥，不发�
 
 ## 作者与反馈
 
-**小七** · [GitHub @zhl-1-2](https://github.com/zhl-1-2)
+**白一帆** · [GitHub @1298335431-hub](https://github.com/1298335431-hub)  
+团队合作项目，仓库保留团队协作与提交记录。
 
 体验中的问题与功能建议欢迎提交到 [Issues](https://github.com/zhl-1-2/lucidream/issues)，开发贡献见 [贡献指南](CONTRIBUTING.md)。涉及密钥、账号或隐私的问题请先阅读 [安全说明](SECURITY.md)，不要公开提交梦境隐私与凭证
